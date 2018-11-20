@@ -8,27 +8,45 @@
     android:padding="10dp"
     tools:context=".activities.Login">
 
-    <EditText
-        android:id="@+id/editText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <TimePicker
+        android:id="@+id/timePick"
+        android:layout_width="337dp"
+        android:layout_height="321dp"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginTop="96dp"
-        android:layout_marginEnd="73dp"
-        android:layout_marginRight="73dp"
-        android:ems="10"
-        android:inputType="date" />
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="97dp"
+        tools:ignore="UnknownId" />
 
-    <EditText
-        android:id="@+id/editText2"
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/buttonSaveDate"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/editText"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="6dp"
+        android:text="Save Availability" />
+
+    <Button
+        android:id="@+id/btnCalendar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonSaveDate"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="387dp"
+        android:text="Go to Calendar" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="92dp"
+        android:layout_height="38dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="192dp"
-        android:ems="10"
-        android:inputType="time" />
+        android:layout_marginStart="157dp"
+        android:layout_marginLeft="157dp"
+        android:layout_marginTop="55dp"
+        android:text="date" />
+
 </RelativeLayout>
